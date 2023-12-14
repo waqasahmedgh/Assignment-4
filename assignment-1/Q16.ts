@@ -6,7 +6,7 @@ let guestList16: string[] = ["Asim", "Zahid", "Fahad"];
 
 console.log(`${guestList16} found a bigger dinner table`);
 
-// Add one new guest to the beginning of your array.
+// Add new guest to the beginning of your array.
 
 guestList16.unshift("Arif");
 guestList16.unshift("Asif");
@@ -16,12 +16,9 @@ guestList16.unshift("Imran");
 
 let midNewGuest: number = Math.floor(guestList16.length / 2);
 
-console.log(midNewGuest);
+console.log("----------------------");
 guestList16.splice(midNewGuest, 0, "Mustafa");
-console.log(guestList16);
-
-// guestList16.push("Arif"); // add new at the end of array
-// guestList16.push("Asif");
-// guestList16.push("Imran");
-
-// console.log(guestList16);
+for (let c = 0; c < guestList16.length; c++) {
+  console.log(`Hello ${guestList16[c]} , you are invited for dinner`);
+}
+//console.log(guestList16);
