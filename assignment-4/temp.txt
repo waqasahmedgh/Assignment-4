@@ -1,0 +1,30 @@
+import * as readlineSync from 'readline-sync';
+
+function celsiusToFahrenheit(tempsCelsius: number[]): number[] {
+    let convertedTemps: number[] = [];
+
+    for (let i = 0; i < tempsCelsius.length; i++) {
+        let fahrenheit = (tempsCelsius[i] * 9 / 5) + 32;
+        convertedTemps.push(fahrenheit);
+    }
+
+    return convertedTemps;
+}
+
+// Taking input from the user
+let numTemperatures: number = parseInt(readlineSync.question('Enter the number of temperatures: '));
+
+let temperaturesCelsius: number[] = [];
+for (let i = 0; i < numTemperatures; i++) {
+    let tempCelsius: number = parseFloat(readlineSync.question(`Enter temperature ${i + 1} in Celsius: `));
+    temperaturesCelsius.push(tempCelsius);
+}
+
+// Converting temperatures
+let convertedTemperatures: number[] = celsiusToFahrenheit(temperaturesCelsius);
+
+// Displaying the converted temperatures
+console.log("Temperatures in Fahrenheit:");
+for (let i = 0; i < convertedTemperatures.length; i++) {
+    console.log(`Temperature ${i + 1}: ${convertedTemperatures[i]}°F`);
+}

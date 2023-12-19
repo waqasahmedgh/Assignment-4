@@ -24,5 +24,11 @@
 let place = ["Pakistan", "London", "America", "Sweden", "Norway"];
 //Print your array in its original order.
 console.log("Original Order : " + place);
-// • Print your array in alphabetical order without modifying the actual list.
+// Print your array in alphabetical order without modifying the actual list.
 console.log("Alphabetcal Order : " + place.sort());
+// Show that your array is still in its original order by printing it.
+console.log("Original Order : " + place);
+// Reverse the order of your list. Print the array to show that its order has changed.
+console.log("Reverse Order : " + place.reverse());
+// Show that your array is still in its original order by printing it again.
+console.log("Original Order : " + place);

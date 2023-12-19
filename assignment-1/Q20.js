@@ -1,20 +1,15 @@
+"use strict";
 /* Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.*/
-
 // Array of mountains
-let mountains: string[] = ["Mount Everest", "K2", "Nanga Parwat"];
-
+let mountains = ["Mount Everest", "K2", "Nanga Parwat"];
 // Array of rivers
-let rivers: string[] = ["Ravi", "Chenab", "Sindh"];
-
+let rivers = ["Ravi", "Chenab", "Sindh"];
 // Array of countries
-let countries: string[] = ["United States", "China", "Pakistan"];
-
+let countries = ["United States", "China", "Pakistan"];
 // Array of cities
-let cities: string[] = ["Lahore", "Gujranwala", "Rawalpindi"];
-
+let cities = ["Lahore", "Gujranwala", "Rawalpindi"];
 // Array of languages
-let languages: string[] = ["English", "Urdu", "Arabic"];
-
+let languages = ["English", "Urdu", "Arabic"];
 // Printing the arrays
 console.log("Mountains:", mountains);
 console.log("Rivers:", rivers);
